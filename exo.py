@@ -23,5 +23,12 @@ def make_sandwiches(number: int, vegan: bool = False):
 make_sandwiches(1)
 make_sandwiches(1, True)
 
+import time
+
+start = time.time_ns()
+
 def power(number, power):
   return number**power
+
+print(power(2, 999))
+print(f"{(time.time_ns() - start)/1000}ms")
